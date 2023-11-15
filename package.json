@@ -1,7 +1,12 @@
 {
   "name": "first-react-app",
   "version": "0.1.0",
+  "homepage": "https://routinelife.github.io/first-react-app-v2/",
   "private": true,
+  "engines": {
+    "npm": "10.2.3",
+    "node": "20.9.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -14,16 +19,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
